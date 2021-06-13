@@ -1,0 +1,28 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+
+.qna__container{
+    background-color: white;
+    margin: 16px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.514);
+}
+
+.q__container{
+    padding: 7px;
+    font-size: 22px;
+    font-family: 'RocknRoll One', sans-serif;
+    color: rgb(14, 0, 209);
+}
+
+.ans__container{
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Andika New Basic', sans-serif;
+    background-color: rgba(43, 226, 134, 0.24);
+    border: none;
+    border-radius: 5px;
+    color: rgb(71, 0, 0);
+}

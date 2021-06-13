@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.app__container {
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  margin: 30px 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 1px rgb(201, 201, 201);
+  border-radius: 15px;
+}
+
+.app__container h1 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  background-color: rgb(255, 40, 83);
+  color: white;
+  padding: 3px 5px;
+  box-shadow: 0px 1px 3px 1px rgb(136, 136, 136);
+}
+
+.home__picture{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.home__picture img{
+  width: 40%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.app__instructions {
+  /* font-family: 'Caveat Brush', cursive; */
+  font-family: "Port Lligat Sans", sans-serif;
+  text-align: center;
+  color: #0033cc;
+}
+
+.app__container ol {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Ramabhadra', sans-serif;
+  color: #0033cc;
+}
+
+.app__formcontainer {
+  justify-content: center;
+  margin: 15px;
+}
+
+.app__formcontainer input {
+  margin: auto;
+}
+
+.app__formcontainer button {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.app__input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(107, 255, 48);
+}
+
+.app__input:focus {
+  outline: none;
+}
+
+.app__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  font-size: 23px;
+  padding: 5px;
+  background-color: #1a1aff;
+  border: 1px solid #0000e6;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Acme', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
+  box-shadow: 0px 1px 3px 1px gray;
+}
+
+.enter__txt{
+  margin: 5px 15px;
+  color: yellow;
+}
+
+.fa-hand-point-right, .fa-hand-point-left{
+  color: yellow;
+}

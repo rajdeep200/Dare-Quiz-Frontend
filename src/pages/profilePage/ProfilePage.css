@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Doppio+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Trocchi&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/* no answer received */
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+.show__details {
+  margin: 5px 15px 5px 15px;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary__heading {
+  color: rgb(80, 0, 0);
+  font-size: 20px;
+  font-family: "Signika Negative", sans-serif;
+  margin-right: 20px;
+}
+
+.details__login {
+  background-color: rgba(207, 130, 238, 0.336);
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Doppio One", sans-serif;
+  color: rgb(65, 0, 80);
+  border: 5px dotted rgb(101, 0, 126);
+}
+
+.details__id,
+.details__password {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details__notice {
+  background-color: yellow;
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.delete__container {
+  margin: 5px;
+  padding: 15px;
+  background-color: rgba(255, 0, 0, 0.158);
+}
+
+.delete__heading {
+  color: rgb(80, 0, 0);
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+.delete__btn {
+  background-color: rgb(255, 0, 76);
+  color: white;
+  padding: 10px 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.363);
+}
+
+.delete__notice {
+  margin-top: 15px;
+  padding: 5px;
+  border: 1px solid red;
+  font-family: "Rubik", sans-serif;
+  color: rgb(153, 0, 0);
+}
+
+.copied {
+  background-color: rgba(0, 212, 0, 0.842);
+  width: 80%;
+  padding: 10px;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+}
+
+.copied span {
+  margin-left: 5px;
+}
+
+.copy__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding: 15px 30px 5px 30px;
+}
+
+.input__link {
+  margin-bottom: 8px;
+  padding: 12px 6px;
+  border: 1px inset gray;
+  border-radius: 3px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.input__link:focus {
+  outline: none;
+}
+
+.copy__button {
+  padding: 8px;
+  border: none;
+  background-color: gray;
+  border-radius: 5px;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.copy__button span {
+  margin-left: 5px;
+}
+
+.wp__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 209, 0);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  border-radius: 3px;
+  margin: 8px;
+  width: 200px;
+}
+
+.wp__button span {
+  margin-left: 5px;
+}
+
+.messenger__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 122, 236);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  border-radius: 3px;
+  margin: 8px;
+  width: 200px;
+}
+
+.messenger__button span {
+  margin-left: 5px;
+}
+
+.grid__container {
+  margin: 20px 5px;
+}
+
+.insta__container {
+  background: linear-gradient(to top right, rgb(255, 0, 76), rgb(255, 166, 0));
+  cursor: pointer;
+}
+
+.fb__container {
+  background-color: rgb(10, 108, 255);
+  cursor: pointer;
+}
+
+.snap__container {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.twit__container {
+  background-color: rgb(0, 174, 255);
+  cursor: pointer;
+}
+
+.table__container {
+  margin: 15px;
+}
+
+.table__heading {
+  font-size: 25px;
+  font-family: "Concert One", cursive;
+  color: white;
+}
+
+.timeline__heading {
+  text-align: center;
+  font-size: 25px;
+  margin: 30px 15px 2px 15px;
+  padding: 5px;
+  font-family: "Trocchi", serif;
+  background-color: rgb(21, 0, 141);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.473);
+  border-radius: 3px;
+  color: yellow;
+}
+
+.noAnswer__received {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin: 10px;
+  padding: 8px;
+  background-color: rgba(23, 19, 248, 0.26);
+  color: rgb(0, 2, 134);
+  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+  border: 1px solid royalblue;
+}
+
+.show__answer {
+  font-size: 17px;
+  font-family: "Play", sans-serif;
+  color: blue;
+}
+
+.sender__name {
+  font-size: 20px;
+  font-family: "Mitr", sans-serif;
+}
+
+.loader__container {
+  margin: auto;
+  top: 50%;
+}
+
+.loader {
+  margin: auto;
+  margin-top: 30px;
+  top: 50%;
+  border: 10px solid rgba(42, 241, 255, 0.404);
+  border-radius: 50%;
+  border-top: 10px solid rgb(0, 119, 255);
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

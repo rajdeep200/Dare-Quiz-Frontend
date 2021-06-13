@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Port+Lligat+Sans&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.failed__container{
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.205);
+  margin: 15px;
+  padding: 7px;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.failed__header{
+  font-size: 25px;
+  font-family: 'Acme', sans-serif;
+  color: red;
+}
+
+.failed__message{
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(126, 0, 0);
+}
+
+.login__container {
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  margin: 80px 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 1px rgb(201, 201, 201);
+  border-radius: 15px;
+}
+
+.login__container h1 {
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  background-color: royalblue;
+  color: white;
+  padding: 3px 5px;
+  box-shadow: 0px 1px 3px 1px rgb(136, 136, 136);
+  border-radius: 3px;
+}
+
+.login__instructions {
+  /* font-family: 'Caveat Brush', cursive; */
+  font-family: "Port Lligat Sans", sans-serif;
+  text-align: center;
+  color: rgb(119, 0, 199);
+}
+
+.login__container ol {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Merienda One", cursive;
+  color: rgb(86, 0, 156);
+}
+
+.login__formcontainer {
+  justify-content: center;
+  margin: 15px;
+}
+
+.login__formcontainer input {
+  margin: auto;
+}
+
+.login__formcontainer button {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.login__input {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(100, 255, 69);
+}
+
+.login__input:focus {
+  outline: none;
+}
+
+.login__btn {
+  width: 100%;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 20px;
+  background-color: #0000b3;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: yellow;
+  font-family: 'RocknRoll One', sans-serif;
+  box-shadow: 0px 1px 3px 1px gray;
+}

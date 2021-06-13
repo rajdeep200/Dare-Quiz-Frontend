@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+
+.modal__input{
+    padding: 10px;
+    margin: 10px;
+}
+
+.modal__button{
+    background-color: black;
+}
+
+.modal__input input[type=text]{
+    padding: 500px;
+}
+
+.upper__heading{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.quizpage{
+    justify-content: center;
+    margin: 30px 20px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgb(204, 204, 204);
+}
+
+.quizpage textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 200px;
+}
+
+.quizpage__question{
+    text-align: center;
+    font-family: 'Lusitana', serif;
+}
+
+.quizpage textarea:focus{
+    outline: none;
+}
+
+.no__answer{
+    color: brown;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.quizpage__button{
+    padding: 10px;
+    font-size: 20px;
+    font-family:"Merienda One", cursive;
+    color: white;
+    background-color: rgb(47, 0, 218);
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 1px gray;
+}
+
+.send__heading{
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 1px 5px;
+    margin: 3px;
+    color:rgb(76, 43, 226);
+}
+
+.send__answer{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    margin: 40px;
+    top: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.445);
+}
+
+.send__image{
+    margin: auto;
+}
+
+.send__answer img {
+    width: 200px;
+}
+
+.arrows{
+    display: flex;
+    max-width: 200px;
+    margin: auto;
+}
+
+.arrows img{
+    width: 40px;
+    margin: 2px 8px 10px 8px;
+}
+
+.send__btn{
+    padding: 3px 10px;
+    background-color: rgb(52, 89, 255);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    border: 1px solid white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.664);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.send__answer button:hover{
+    background-color: rgb(29, 0, 97);
+}
