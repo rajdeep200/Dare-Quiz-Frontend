@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dare-quiz/static/css/main.0bc7f966.chunk.css",
+    "main.js": "/dare-quiz/static/js/main.0b1ec3c6.chunk.js",
+    "main.js.map": "/dare-quiz/static/js/main.0b1ec3c6.chunk.js.map",
+    "runtime-main.js": "/dare-quiz/static/js/runtime-main.990e4560.js",
+    "runtime-main.js.map": "/dare-quiz/static/js/runtime-main.990e4560.js.map",
+    "static/js/2.4b44e31c.chunk.js": "/dare-quiz/static/js/2.4b44e31c.chunk.js",
+    "static/js/2.4b44e31c.chunk.js.map": "/dare-quiz/static/js/2.4b44e31c.chunk.js.map",
+    "static/js/3.bde4f09d.chunk.js": "/dare-quiz/static/js/3.bde4f09d.chunk.js",
+    "static/js/3.bde4f09d.chunk.js.map": "/dare-quiz/static/js/3.bde4f09d.chunk.js.map",
+    "index.html": "/dare-quiz/index.html",
+    "static/css/main.0bc7f966.chunk.css.map": "/dare-quiz/static/css/main.0bc7f966.chunk.css.map",
+    "static/js/2.4b44e31c.chunk.js.LICENSE.txt": "/dare-quiz/static/js/2.4b44e31c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.990e4560.js",
+    "static/js/2.4b44e31c.chunk.js",
+    "static/css/main.0bc7f966.chunk.css",
+    "static/js/main.0b1ec3c6.chunk.js"
+  ]
+}
