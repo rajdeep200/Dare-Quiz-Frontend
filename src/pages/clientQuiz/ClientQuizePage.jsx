@@ -5,38 +5,37 @@ import { getQuestions } from "../../redux/actions/questionActions";
 import { saveAnswer, clearAnswer } from "../../redux/actions/answerActions";
 import { sendAnswer } from "../../utils/sendAnswers";
 import { getCreatorName } from "../../redux/actions/questionActions";
+import Footer from "../../components/footer/footer";
 import "./ClientQuiz.css";
 
 const ClientQuizePage = ({ history, match }) => {
   const dispatch = useDispatch();
-  const quizCreatorID = match.params.id
+  const quizCreatorID = match.params.id;
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
-  console.log(quizCreatorID)
+  console.log(quizCreatorID);
 
   useEffect(() => {
-    if (userInfo) {
-      history.push("/profile");
-    } else {
-      setShow(true);
-      dispatch(getQuestions());
-      dispatch(getCreatorName(quizCreatorID))
-    }
-  }, [dispatch, history, userInfo,quizCreatorID]);
+    setShow(true);
+    dispatch(getQuestions());
+    dispatch(getCreatorName(quizCreatorID));
+  }, [dispatch, history, userInfo, quizCreatorID]);
 
   const answerList = useSelector((state) => state.answer);
   const { answers } = answerList;
 
-  const creator = useSelector(state => state.creator)
-  const creatorName = creator.name
-  console.log(creatorName)
+  const creator = useSelector((state) => state.creator);
+  const creatorName = creator.name;
+  console.log(creatorName);
 
   const [show, setShow] = useState(false);
   const [name, setName] = useState("");
 
   const questionList = useSelector((state) => state.question);
   const { questions } = questionList;
-  const newQuestions = questions.map((question) => question.qText.toString().replace("USER",creatorName));
+  const newQuestions = questions.map((question) =>
+    question.qText.toString().replace("USER", creatorName)
+  );
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answer, setAnswer] = useState("");
@@ -105,7 +104,12 @@ const ClientQuizePage = ({ history, match }) => {
               onChange={(e) => setAnswer(e.target.value)}
               required
             ></textarea>
-            <div className="no__answer" onClick={() => setAnswer("I don't have an answer")}>I don't have an answer</div>
+            <div
+              className="no__answer"
+              onClick={() => setAnswer("I don't have an answer")}
+            >
+              I don't have an answer
+            </div>
             <button
               type="submit"
               className="quizpage__button"
@@ -119,16 +123,33 @@ const ClientQuizePage = ({ history, match }) => {
         <div className="send__answer">
           <div className="send__heading">Click Below To Send Your Answers</div>
           <div className="send__image">
-            <img src="https://i.ibb.co/7bVdPs3/friendship.png" alt="friendship dare 2021" />
+            <img
+              src="https://i.ibb.co/C820KyF/friendship-2.png"
+              alt="friendship dare 2021"
+            />
           </div>
           <div className="arrows">
-              <img src="https://i.ibb.co/cyY6x3z/pointing-down.png" alt="friendship dare quiz 2021" />
-              <img src="https://i.ibb.co/cyY6x3z/pointing-down.png" alt="friendship dare quiz 2021" />
-              <img src="https://i.ibb.co/cyY6x3z/pointing-down.png" alt="friendship dare quiz 2021" />
+            <img
+              src="https://i.ibb.co/cyY6x3z/pointing-down.png"
+              alt="friendship dare quiz 2021"
+            />
+            <img
+              src="https://i.ibb.co/cyY6x3z/pointing-down.png"
+              alt="friendship dare quiz 2021"
+            />
+            <img
+              src="https://i.ibb.co/cyY6x3z/pointing-down.png"
+              alt="friendship dare quiz 2021"
+            />
           </div>
-          <button className="send__btn" onClick={sendToDb}>Send</button>
+          <button className="send__btn" onClick={sendToDb}>
+            <i className="fa fa-hand-point-right"></i>
+            <div className="send__btnText">Send</div>
+            <i class="fa fa-hand-point-left"></i>
+          </button>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+
+
+.terms{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.terms__heading{
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    margin-bottom: 1rem;
+}
+
+.terms__details{
+    font-family: 'Hind Siliguri', sans-serif;
+}

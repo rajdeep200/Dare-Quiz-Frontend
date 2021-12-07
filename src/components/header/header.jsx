@@ -19,8 +19,8 @@ const Header = ({ history }) => {
 
   return (
     <div className="header">
-      <Link to="/" style={{textDecoration:"none"}} >
-        <div className="header__left">I Dare You</div>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <div className="header__left">Dare You Mate</div>
       </Link>
       <div className="header__right">
         {userInfo ? (
@@ -28,9 +28,11 @@ const Header = ({ history }) => {
             <Link to="/profile">
               <button className="app__button">Profile</button>
             </Link>
-            <button className="app__button" onClick={logoutHandler}>
-              Logout
-            </button>
+            <Link to="/login">
+              <button className="app__button" onClick={logoutHandler}>
+                Logout
+              </button>
+            </Link>
           </>
         ) : (
           <Link to="/login">

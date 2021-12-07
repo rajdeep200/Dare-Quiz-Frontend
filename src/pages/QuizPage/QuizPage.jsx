@@ -32,7 +32,7 @@ const Quiz = ({ history }) => {
           </h2>
           <button
             type="submit"
-            className="quizpage__button"
+            className="quiz__button"
             onClick={nextQuestionHandler}
           >
             Next

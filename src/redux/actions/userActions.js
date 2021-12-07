@@ -12,8 +12,12 @@ export const registerUser = (name) => async (dispatch) => {
       },
     };
 
-    const { data } = await axios.post("/users", { name }, config);
-    console.log(data)
+    const { data } = await axios.post(
+      "https://fathomless-dawn-44469.herokuapp.com/users",
+      { name },
+      config
+    );
+    console.log(data);
     dispatch({
       type: "USER_REGISTER_SUCCESS",
       payload: data,
@@ -26,7 +30,7 @@ export const registerUser = (name) => async (dispatch) => {
 
     localStorage.setItem("userInfo", JSON.stringify(data));
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 };
 
@@ -43,7 +47,7 @@ export const login = (userID, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/users/login",
+      "https://dare-quiz-by-rajdeep.herokuapp.com/login",
       { userID, password },
       config
     );
@@ -68,7 +72,7 @@ export const logout = () => async (dispatch) => {
   dispatch({ type: "LOGOUT" });
 };
 
-export const deleteUserAccount = (userID,token) => async (dispatch) => {
+export const deleteUserAccount = (userID, token) => async (dispatch) => {
   try {
     localStorage.removeItem("userInfo");
     localStorage.removeItem("questions");
@@ -80,14 +84,16 @@ export const deleteUserAccount = (userID,token) => async (dispatch) => {
     const config = {
       Headers: {
         "Content-Type": "application/json",
-        Authorization:`Bearer ${token}`
+        Authorization: `Bearer ${token}`,
       },
     };
 
-    const {data} = await axios.delete(`/users/${userID}`,config)
+    const { data } = await axios.delete(
+      `https://dare-quiz-by-rajdeep.herokuapp.com/${userID}`,
+      config
+    );
 
-    console.log(data)
-
+    console.log(data);
   } catch (error) {
     console.log(error);
   }

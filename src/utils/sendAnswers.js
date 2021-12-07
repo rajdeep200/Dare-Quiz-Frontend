@@ -12,7 +12,7 @@ export const sendAnswer = async (answers,userID,sender) => {
             }
         }
 
-        const {data} = await axios.post("/answers",{answers,userID,sender},config)
+        const {data} = await axios.post("https://fathomless-dawn-44469.herokuapp.com/answers",{answers,userID,sender},config)
         console.log(data)
         return data
 

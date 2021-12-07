@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 
@@ -77,12 +78,15 @@
 }
 
 .send__heading{
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
-    font-family: 'Kanit', sans-serif;
-    padding: 1px 5px;
+    font-family: 'Libre Baskerville', serif;
+    padding: 5px 10px;
     margin: 3px;
-    color:rgb(76, 43, 226);
+    color:blue;
+    border: 1px solid rgb(0, 255, 21);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 0, 0.253);
 }
 
 .send__answer{
@@ -118,18 +122,25 @@
 }
 
 .send__btn{
-    padding: 3px 10px;
-    background-color: rgb(52, 89, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: rgb(255, 21, 68);
     color: white;
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
     border: 1px solid white;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.664);
-    border-radius: 3px;
+    border-radius: 8px;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
 .send__answer button:hover{
-    background-color: rgb(29, 0, 97);
+    background-color: crimson;
+}
+
+.send__btnText{
+    margin: 0px 18px;
 }

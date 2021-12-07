@@ -131,6 +131,14 @@
   margin-left: 5px;
 }
 
+.wpstory__link{
+  text-decoration: none;
+}
+
+.wp__link{
+  text-decoration: none;
+}
+
 .wp__button {
   display: flex;
   justify-content: center;
@@ -144,6 +152,7 @@
   border-radius: 3px;
   margin: 8px;
   width: 200px;
+  text-decoration: indigo;
 }
 
 .wp__button span {
@@ -173,8 +182,8 @@
   margin: 20px 5px;
 }
 
-.insta__container {
-  background: linear-gradient(to top right, rgb(255, 0, 76), rgb(255, 166, 0));
+.reddit__container {
+  background-color: orange;
   cursor: pointer;
 }
 
@@ -183,8 +192,8 @@
   cursor: pointer;
 }
 
-.snap__container {
-  background-color: yellow;
+.pin__container {
+  background-color: rgb(207, 0, 0);
   cursor: pointer;
 }
 

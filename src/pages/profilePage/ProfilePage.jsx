@@ -6,11 +6,11 @@ import { ImWhatsapp } from "react-icons/im";
 import { GiCheckMark } from "react-icons/gi";
 import {
   FaFacebookMessenger,
-  FaInstagram,
   FaFacebook,
-  FaSnapchat,
   FaTwitter,
   FaRegCopy,
+  FaPinterest,
+  FaRedditAlien,
 } from "react-icons/fa";
 import {
   Grid,
@@ -161,33 +161,64 @@ const ProfilePage = ({ history }) => {
         {userInfo ? (
           <>
             <div className="wpstory__link">
-              <button
-                className="wp__button"
-                onClick={`whatsapp://send?text=🙋‍♂️Hey!!! ${userInfo.name} have got a fun dare challenge for you🎉🎉🎉 Accept it by clicking this link`}
+              <a
+                href={`https://api.whatsapp.com/send?text=🙋‍♂️Hey!!! ${userInfo.name} have got a fun dare challenge for you🎉🎉🎉 Accept it by clicking this link  ${window.location.origin}/quiz/${userInfo.userID}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wp__link"
               >
-                <ImWhatsapp size="30px" />
-                <span>Add To Story</span>
-              </button>
+                <button className="wp__button">
+                  <ImWhatsapp size="30px" />
+                  <span>Add To Story</span>
+                </button>
+              </a>
             </div>
             <div className="messenger__link">
-              <button className="messenger__button">
-                <FaFacebookMessenger size="30px" />
-                <span>Share</span>
-              </button>
+              <a
+                href={`https://www.facebook.com/sharer.php?u=${window.location.origin}/quiz/${userInfo.userID}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="messenger__button">
+                  {/* <FaFacebookMessenger size="30px" /> */}
+                  <FaFacebook size="30px" color="white" />
+                  <span>Share</span>
+                </button>
+              </a>
             </div>
             <div className="grid__container">
               <Grid container spacing={3}>
-                <Grid item xs={3} className="insta__container" spacing={3}>
-                  <FaInstagram size="30px" color="white" />
+                <Grid item xs={3} className="reddit__container" spacing={3}>
+                  <a href={`https://reddit.com/submit?url=${window.location.origin}/quiz/${userInfo.userID}&title=🙋‍♂️Hey!!! ${userInfo.name} have got a fun dare challenge for you🎉🎉🎉 Accept it by clicking this link`} target="_blank" rel="noopener noreferrer">
+                    <FaRedditAlien size="30px" color="white" />
+                  </a>
                 </Grid>
                 <Grid item xs={3} className="fb__container">
-                  <FaFacebook size="30px" color="white" />
+                  <a
+                    href={`https://www.addtoany.com/add_to/facebook_messenger?linkurl=${window.location.origin}/quiz/${userInfo.userID}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookMessenger size="30px" color="white" />
+                  </a>
                 </Grid>
-                <Grid item xs={3} className="snap__container">
-                  <FaSnapchat size="30px" color="black" />
+                <Grid item xs={3} className="pin__container">
+                  <a
+                    href={`http://pinterest.com/pin/create/link/?url=${window.location.origin}/quiz/${userInfo.userID}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaPinterest size="30px" color="white" />
+                  </a>
                 </Grid>
                 <Grid item xs={3} className="twit__container">
-                  <FaTwitter size="30px" color="white" />
+                  <a
+                    href={`https://twitter.com/share?url=${window.location.origin}/quiz/${userInfo.userID}&text=🙋‍♂️Hey!!! ${userInfo.name} have got a fun dare challenge for you🎉🎉🎉 Accept it by clicking this link&hashtags=#friendshipdare2021#darefriendship`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter size="30px" color="white" />
+                  </a>
                 </Grid>
               </Grid>
             </div>
@@ -201,7 +232,9 @@ const ProfilePage = ({ history }) => {
         {answerList ? (
           <div className="table__container">
             {answerList.length < 1 ? (
-              <div className="noAnswer__received">You didn't receive any answers yet</div>
+              <div className="noAnswer__received">
+                You didn't receive any answers yet
+              </div>
             ) : (
               <TableContainer component={Paper}>
                 <Table>
@@ -223,9 +256,7 @@ const ProfilePage = ({ history }) => {
                         </TableCell>
                         <TableCell>
                           <Link to={`/answers/${answer._id}`}>
-                            <div
-                              className="show__answer"
-                            >
+                            <div className="show__answer">
                               Show <DoubleArrowIcon />{" "}
                             </div>
                           </Link>
