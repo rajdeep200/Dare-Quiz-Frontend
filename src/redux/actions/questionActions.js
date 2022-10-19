@@ -7,7 +7,7 @@ export const getQuestions = () => async (dispatch) => {
     });
 
     const { data } = await axios.get(
-      "https://dare-quiz-by-rajdeep.herokuapp.com/questions"
+      "https://dare-quiz-2022-by-rajdeep.herokuapp.com/questions"
     );
     dispatch({
       type: "GET_QUESTIONS_SUCCESS",
@@ -29,7 +29,7 @@ export const getCreatorName = (id) => async (dispatch) => {
       type: "GET_CREATOR_NAME_REQUEST",
     });
     const { data } = await axios.get(
-      `https://dare-quiz-by-rajdeep.herokuapp.com/questions/${id}`
+      `https://dare-quiz-2022-by-rajdeep.herokuapp.com/questions/${id}`
     );
 
     dispatch({
