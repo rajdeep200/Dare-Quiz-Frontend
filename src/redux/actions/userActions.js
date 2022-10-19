@@ -13,7 +13,7 @@ export const registerUser = (name) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://fathomless-dawn-44469.herokuapp.com/users",
+      "https://dare-quiz-2022-by-rajdeep.herokuapp.com/users",
       { name },
       config
     );
@@ -47,7 +47,7 @@ export const login = (userID, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://dare-quiz-by-rajdeep.herokuapp.com/login",
+      "https://dare-quiz-2022-by-rajdeep.herokuapp.com/login",
       { userID, password },
       config
     );
@@ -89,7 +89,7 @@ export const deleteUserAccount = (userID, token) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `https://dare-quiz-by-rajdeep.herokuapp.com/${userID}`,
+      `https://dare-quiz-2022-by-rajdeep.herokuapp.com/${userID}`,
       config
     );
 
