@@ -33,7 +33,7 @@ export const getAnswer = (id) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.get(
-      `https://dare-quiz-by-rajdeep.herokuapp.com/${id}`,
+      `https://dare-quiz-2022-by-rajdeep.herokuapp.com/${id}`,
       config
     );
 
