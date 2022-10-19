@@ -22,19 +22,19 @@ const HomePage = ({ history }) => {
   return (
     <>
       <div className="app__container">
-        <h1>Friendship Dare 2021</h1>
+        <h1>Friendship Quiz 2022</h1>
         <div className="home__picture">
           <img
             src="https://i.ibb.co/dGHMvN4/handshake.png"
-            alt="Friendship Dare 2021"
+            alt="Friendship Quiz 2022"
           />
         </div>
         <h3 className="app__instructions">-: Instructions :-</h3>
         <ol>
           <li>Enter your name</li>
           <li>Review the questions given by clicking next</li>
-          <li>Create your own friendship dare in 2021</li>
-          <li>Your dare link will be ready</li>
+          <li>Create your own best friendship quiz in 2022</li>
+          <li>Your dare friendship dare challenge link will be ready</li>
           <li>Share the link with your friends</li>
           <li>Your friends will answer your questions</li>
           <li>Read their answers in your profile</li>
